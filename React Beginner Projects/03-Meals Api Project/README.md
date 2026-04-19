@@ -39,7 +39,7 @@ A simple React project that fetches and displays seafood meals using an external
 1. Clone the repository
 
    ```
-   git clone "this repo link"
+   git clone "https://github.com/DeepakJalumoori/react-js-projects/tree/main/React%20Beginner%20Projects/03-Meals%20Api%20Project"
    ```
 
 2. Navigate to the project folder
