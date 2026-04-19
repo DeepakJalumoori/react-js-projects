@@ -55,7 +55,7 @@ Todo-App/
 1. Clone the repository:
 
 ```
-git clone https://github.com/your-username/todo-app.git
+git clone https://github.com/DeepakJalumoori/react-js-projects/tree/main/React%20Beginner%20Projects/02-Todo-List
 ```
 
 2. Navigate to the project folder:
