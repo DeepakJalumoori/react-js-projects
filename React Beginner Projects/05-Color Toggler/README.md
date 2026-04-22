@@ -41,8 +41,8 @@ A simple and interactive **Color Toggler** built using React. This project allow
 👉 Add a screenshot here (optional)
 
 ```
-![Dark Mode](../05-Color%20Toggler/src/assets/image1.png)
-![Light Mode](../05-Color%20Toggler/src/assets/image2.png)
+![Dark Mode](./src/assets/image1.png)
+![Light Mode](./src/assets/image2.png)
 ```
 
 ---
