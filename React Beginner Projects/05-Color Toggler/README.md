@@ -36,19 +36,6 @@ A simple and interactive **Color Toggler** built using React. This project allow
 
 ---
 
-## 📸 Preview
-
-👉 Add a screenshot here (optional)
-
-```
-![Dark Mode]<img width="1900" height="777" alt="image" src="https://github.com/user-attachments/assets/e8b9db05-3ced-4fa2-8e12-18fe9a089dfb" />
-
-![Light Mode](<img width="1890" height="794" alt="image" src="https://github.com/user-attachments/assets/f7f39f38-2f91-4c62-a5f3-49af4705d1e6" />
-)
-```
-
----
-
 ## ▶️ Getting Started
 
 1. Clone the repository:
