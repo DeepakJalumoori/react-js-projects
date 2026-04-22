@@ -5,10 +5,10 @@ const Calculator = () => {
   const [input,setInput] = useState("");
 
   const display = (value) => {
-    setInput(input+value)
+    setInput((prev => prev + value))
   };
 
-  const claculate = () => {
+  const calculate = () => {
     var answer = eval(input);
     setInput(answer);
   }
@@ -20,7 +20,12 @@ const Calculator = () => {
 
   return (
     <form className='calculator' name='calc'>
-      <input type="text" className='value' value={input} />
+      <input
+       type="text" 
+       className='value' 
+       value={input} 
+       readOnly
+      />
       <span className='num clear' onClick={() => clear()}>
         C
       </span>
@@ -40,7 +45,7 @@ const Calculator = () => {
       <span onClick={() => display("0")}>0</span>
       <span onClick={() => display("00")}>00</span>
       <span onClick={() => display(".")}>.</span>
-      <span className='num equal' onClick={() => claculate()}>=</span>
+      <span className='num equal' onClick={() => calculate()}>=</span>
       
     </form>
   )
