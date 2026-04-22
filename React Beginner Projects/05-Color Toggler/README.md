@@ -41,8 +41,10 @@ A simple and interactive **Color Toggler** built using React. This project allow
 👉 Add a screenshot here (optional)
 
 ```
-![Dark Mode](./src/assets/image1.png)
-![Light Mode](./src/assets/image2.png)
+![Dark Mode]<img width="1900" height="777" alt="image" src="https://github.com/user-attachments/assets/e8b9db05-3ced-4fa2-8e12-18fe9a089dfb" />
+
+![Light Mode](<img width="1890" height="794" alt="image" src="https://github.com/user-attachments/assets/f7f39f38-2f91-4c62-a5f3-49af4705d1e6" />
+)
 ```
 
 ---
@@ -52,7 +54,7 @@ A simple and interactive **Color Toggler** built using React. This project allow
 1. Clone the repository:
 
 ```
-git clone https://github.com/your-username/color-toggler.git
+git clone https://github.com/DeepakJalumoori/react-js-projects/tree/main/React%20Beginner%20Projects/05-Color%20Toggler
 ```
 
 2. Navigate to the project folder:
