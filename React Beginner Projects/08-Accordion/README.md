@@ -1,4 +1,4 @@
-# 📂 Accordion (React Project)
+# 📂 Accordion 
 
 A simple and interactive **Accordion UI** built using React. This project allows users to expand and collapse sections to view content, similar to FAQ sections used in real-world applications.
 
