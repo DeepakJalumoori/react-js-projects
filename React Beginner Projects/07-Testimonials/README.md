@@ -1,5 +1,4 @@
-# 💬 Testimonials Carousel (React Project)
-
+# 💬 Testimonials Carousel 
 A simple and interactive **Testimonials Carousel** built using React. This project displays user testimonials and allows navigation through them using Previous and Next buttons.
 
 ---
