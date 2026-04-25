@@ -1,16 +1,38 @@
-# React + Vite
+# 📂 Form Validation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and interactive **Form Validation UI** built using React. This project validates user inputs like username, email, and password, providing instant feedback with error messages and visual cues.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+* Validate **Username, Email, Password, and Confirm Password**
+* Display error messages for invalid inputs
+* Dynamic input border color (**red for error, green for success**)
+* Prevent form submission if validation fails
+* Simple and clean user interface
+* Built using **React Hooks (`useState`)**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **React JS**
+* **JavaScript (ES6)**
+* **CSS**
+
+---
+
+## 📌 How It Works
+
+* User enters details into the form fields
+* On clicking **Submit**, validation logic runs
+* Errors are shown if inputs are invalid
+* Input borders change color based on validation result
+* If all fields are valid, form is successfully validated
+
+---
+
+## 🙌 Acknowledgement
+
+This project is part of my React learning journey by building beginner-friendly UI components.
