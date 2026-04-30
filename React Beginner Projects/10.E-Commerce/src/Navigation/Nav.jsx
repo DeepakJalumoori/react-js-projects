@@ -1,22 +1,24 @@
-import React from 'react';
+import React from "react";
 import { FiHeart } from "react-icons/fi";
 import { AiOutlineShoppingCart, AiOutlineUserAdd } from "react-icons/ai";
 import "./Nav.css";
 
-const Nav = () => {
+const Nav = ({ query, handleInputChange }) => {
   return (
     <nav>
       <div className="nav-container">
         <input
-         type="text"
-         className='search-input'
-         placeholder='search your shoes here'
+          type="text"
+          className="search-input"
+          placeholder="search your shoes here"
+          onChange={handleInputChange}
+          value={query}
         />
       </div>
 
       <div className="profile-container">
         <a href="#">
-          <FiHeart className='nav-icons' />
+          <FiHeart className="nav-icons" />
         </a>
         <a href="">
           <AiOutlineShoppingCart className="nav-icons" />
@@ -26,7 +28,7 @@ const Nav = () => {
         </a>
       </div>
     </nav>
-  )
-}
+  );
+};
 
 export default Nav;

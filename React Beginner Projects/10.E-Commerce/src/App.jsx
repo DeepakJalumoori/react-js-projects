@@ -3,9 +3,6 @@ import { useState } from "react";
 import Nav from "./Navigation/Nav";
 import Products from "./Products/Products";
 import Recommended from "./Recommended/Recommended";
-import Categories from "./Sidebar/Categories/Categories";
-import Colors from "./Sidebar/Colors/Colors";
-import Price from "./Sidebar/Price/Price";
 import Sidebar from "./Sidebar/Sidebar";
 
 //Database
@@ -18,7 +15,7 @@ const App = () => {
   //Input filter
   const [query, setQuery] = useState("");
   const handleInputChange = (event) => {
-    setQuery(event.input.value);
+    setQuery(event.target.value);
   };
   const filteredItems = products.filter((product) =>
     product.title.toLocaleLowerCase().includes(query.toLocaleLowerCase()),
@@ -36,6 +33,9 @@ const App = () => {
 
   function filteredData(products, selected, query) {
     let filteredProducts = products;
+    const normalizedSelected = selected
+      ? selected.toString().toLowerCase()
+      : "";
 
     //Filtering input items
     if (query) {
@@ -46,20 +46,22 @@ const App = () => {
     if (selected) {
       filteredProducts = filteredProducts.filter(
         ({ category, color, company, newPrice, title }) =>
-          category === selected ||
-          color === selected ||
-          company === selected ||
-          newPrice === selected ||
-          title === selected,
+          category.toLowerCase() === normalizedSelected ||
+          color.toLowerCase() === normalizedSelected ||
+          company.toLowerCase() === normalizedSelected ||
+          newPrice.toLowerCase() === normalizedSelected ||
+          title.toLowerCase() === normalizedSelected,
       );
     }
 
     return filteredProducts.map(
-      ({ img, title, star, reviews, prevPrice, newPrice }) => (
+      ({ img, title, star, reviews, prevPrice, newPrice }, index) => (
         <Card
-          key={Math.random()}
+          key={`${title}-${index}`}
           img={img}
           title={title}
+          star={star}
+          reviews={reviews}
           prevPrice={prevPrice}
           newPrice={newPrice}
         />
@@ -72,9 +74,9 @@ const App = () => {
   return (
     <>
       <Sidebar handleChange={handleChange} />
-      <Nav />
-      <Recommended />
-      <Products />
+      <Nav query={query} handleInputChange={handleInputChange} />
+      <Recommended handleClick={handleClick} />
+      <Products result={result} />
     </>
   );
 };

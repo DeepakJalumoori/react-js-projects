@@ -33,7 +33,7 @@ const Categories = ({ handleChange }) => {
         />
         <Input
           handleChange={handleChange}
-          value="heals"
+          value="heels"
           title="Heels"
           name="test"
         />
