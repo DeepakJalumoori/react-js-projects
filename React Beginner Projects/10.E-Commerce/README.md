@@ -1,16 +1,108 @@
-# React + Vite
+# E-Commerce Product Filter App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A beginner-friendly React + Vite project that displays a product catalog and supports multi-source filtering.
 
-Currently, two official plugins are available:
+Users can filter products by:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Search text
+- Category
+- Price
+- Color
+- Brand (Recommended buttons)
 
-## React Compiler
+This project focuses on state management, event handling, and reusable component structure in React.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React
+- Vite
+- React Icons
+- ESLint
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+- Product card list rendered from local data
+- Sidebar radio filters:
+  - Category
+  - Price
+  - Color
+- Top search input for title-based filtering
+- Brand quick filters using buttons
+- Combined filtering flow (search + selected filter)
+- Responsive layout suitable for beginner portfolio projects
+
+## Project Structure
+
+```text
+src/
+	App.jsx
+	main.jsx
+	index.css
+	components/
+		Card.jsx
+		Buttons.jsx
+		Input.jsx
+	db/
+		data.jsx
+	Navigation/
+		Nav.jsx
+		Nav.css
+	Products/
+		Products.jsx
+		Products.css
+	Recommended/
+		Recommended.jsx
+		Recommended.css
+	Sidebar/
+		Sidebar.jsx
+		Sidebar.css
+		Categories/
+		Colors/
+		Price/
+```
+
+## Getting Started
+
+### 1. Install dependencies
+
+```bash
+npm install
+```
+
+### 2. Run development server
+
+```bash
+npm run dev
+```
+
+### 3. Build for production
+
+```bash
+npm run build
+```
+
+### 4. Preview production build
+
+```bash
+npm run preview
+```
+
+## Available Scripts
+
+- `npm run dev` - start local dev server
+- `npm run build` - create production build
+- `npm run preview` - preview production build locally
+- `npm run lint` - run ESLint
+
+## Learning Goals Covered
+
+- Lifting state to parent component
+- Controlled input fields in React
+- Reusable UI components with props
+- Conditional filtering with array methods
+- Debugging common React issues (event wiring, unique keys)
+
+## Notes
+
+- Product data is currently static and stored in `src/db/data.jsx`.
+- This project is educational and does not include cart, checkout, authentication, or backend APIs.
