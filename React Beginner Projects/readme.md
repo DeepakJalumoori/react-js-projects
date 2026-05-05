@@ -4,16 +4,25 @@ This workspace contains a set of small React projects built with Vite. Each fold
 
 ## Projects
 
-- 01-Counter
-- 02-Todo-List
-- 03-Meals Api Project
-- 04-Calculator
-- 05-Color Toggler
-- 06-Search Icon
-- 07-Testimonials
-- 08-Accordion
-- 09-Form Validation
-- 10.E-Commerce
+1. **01-Counter** - A simple counter application demonstrating state management with increment and decrement buttons. Great for learning React hooks like `useState`.
+
+2. **02-Todo-List** - A todo list app where users can add, view, and manage tasks. Covers state management, list rendering, and event handling.
+
+3. **03-Meals Api Project** - Fetches and displays meal data from an external API. Perfect for learning data fetching, API integration, and handling async operations.
+
+4. **04-Calculator** - A functional calculator app for performing basic arithmetic operations. Demonstrates state management and event handling.
+
+5. **05-Color Toggler** - An interactive application that toggles and displays different colors. Great for practicing state updates and conditional rendering.
+
+6. **06-Search Icon** - A search functionality component with an interactive search icon. Teaches input handling and filtering.
+
+7. **07-Testimonials** - Displays rotating testimonials with navigation controls. Demonstrates component composition and state-driven UI updates.
+
+8. **08-Accordion** - An accordion component that expands and collapses sections. Covers conditional rendering and state management for multiple items.
+
+9. **09-Form Validation** - A form with validation logic for user inputs. Perfect for learning form handling, validation rules, and error messaging.
+
+10. **10.E-Commerce** - A full e-commerce product filter app with sidebar filters, categories, colors, and price ranges. Demonstrates complex state management, filtering logic, and component modularity.
 
 ## How To Run
 
